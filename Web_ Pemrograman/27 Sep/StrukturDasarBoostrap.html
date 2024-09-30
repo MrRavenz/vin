@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Pemrograman Web Mobile</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-outline-info">Outline Info</button>
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-success btn-lg active">Active Large</a>
+                <a href="#" class="btn btn-warning btn-sm disabled">Disabled Small</a>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 mt-2">
+            <input type="button" class="btn btn-danger" value="Cancel" >
+        </div>
+        <div class="row mt-2">
+            <input type="button" class="btn btn-success" value="Info" >
+        </div> <!-- End of container button-->
+
+        <div class="container">
+            <div class="alert alert-primary" role="alert">
+                Ini adalah alert primary dengan <a href="http://www.google.com/search" class="alert-link">Tautan</a>. Silahkan klik link ini.
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Judul alert!</h4>
+                <p>Bagian ini adalah isi dari alert ketika sukses.</p>
+            </div>
+
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Klik tanda silang</strong>untuk menyembunyikan alert
+            </div>
+        </div> <!--End of container alert-->
+    </div>
+
+    <div class="container">
+        <h1>Jadwal Ujian</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Hari</th>
+                        <th>Jam Pertama</th>
+                        <th>Jam Kedua</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-uppercase">Senin</td>
+                        <td class="text-center bg-primary text-white">Bahasa Indonesia</td>
+                        <td class="text-center bg-danger text-white">Matematika</td>
+                    </tr>
+                    <tr>
+                        <td class="text-uppercase">Selasa</td>
+                        <td class="text-center bg-warning text-white">Bahasa Inggeris</td>
+                        <td class="text-center bg-success text-white">Biologi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

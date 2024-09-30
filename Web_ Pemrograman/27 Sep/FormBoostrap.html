@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Boostrap</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+    <div class="container">
+        <br>
+        <form>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label class="form-label" for="inputFirstName">Nama</label>
+                    <input type="text" id="inputFirstName" class="form-control" placeholder="Masukkan Nama Depan">
+                </div>
+
+
+                <div class="col-md-6">
+                    <label class="form-label" for="inputLastName">Marga</label>
+                    <input type="text" id="inputLastName" class="form-control" placeholder="Masukkan Marga">
+                </div>
+            </div> <!--End of row Nama dan Marga-->
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label class="form-label" for="inputAlamat"><b>Alamat</b></label>
+                    <textarea class="form-control" id="inputAlamat" rows="4" cols="100" placeholder="Masukkan Alamat Lengkap"></textarea>
+                </div>
+            </div> <!--End of row Alamat-->
+
+            <div class="row mb-4">
+                <label for="jenisKelamin"><b>Jenis Kelamin</b></label>
+                <div class="col-md-12">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="jenisKelamin" name="jenisKelamin" class="form-check-input">
+                        <label for="laki-laki" class="form-check-label">Laki-laki</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="jenisKelamin" name="jenisKelamin" class="form-check-input">
+                        <label for="perempuan" class="form-check-label">Perempuan</label>
+                    </div>
+                </div>
+            </div> <!--End of Jenis Kelamin-->
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="status"><b>Status</b></label>
+                    <select name="status" id="status" class="form-select">
+                        <option selected disabled>Pilih status</option>
+                        <option value="single">Single</option>
+                        <option value="menikah">Married</option>
+                    </select>
+                </div>
+            </div> <!--End of Status-->
+
+            
+            <div class="row mb-4">
+                <label for="mataKuliah"><b>Mata Kuliah</b></label>
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="mataKuliah">
+                        <label for="Web">Pemrograman Web</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pemdas">
+                        <label for="pemdas">Pemrograman Dasar</label>
+                    </div>
+                </div>
+            </div> <!--End of Matkul-->
+
+            <div class="row mb-4">
+                <div class="cold-md-12">
+                    <label for="uploadFile"><b>Upload File</b></label>
+                    <input type="file" class="form-control" id="uploadFile">
+                </div>
+            </div> <!--End of Upload File-->
+
+            <div class="row mb-4">
+                <div class="cold-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </div> <!--End of Button-->
+
+        </form>
+    </div>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

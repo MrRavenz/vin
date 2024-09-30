@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.makanan{
+    background-color: aliceblue;
+    width: 40%;
+}
+
+.makanan h2{
+    background-color: yellow;
+}
+
+.makanan ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.makanan li{
+    background-color: #333;
+    color: blue;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}

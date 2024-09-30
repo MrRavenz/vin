@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .head{
+            color: aqua;
+        }
+        #personal{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2 id="personal">Personal Information</h2>
+        <label for="name">Name:</label>
+        <!-- Bedanya id sama name (id gk boleh sama / unik, sedangkan name boleh sama) 
+         kalo id(pake # pas dipanggil di css)
+         kalo name(pake . pas dipanggil di css) 
+         Value kalo diisikan di html langsung ada nilainya di webnya
+         -->
+        <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces" placeholder="Masukkan Nama" required ><br><br>
+        <!-- accept itu hanya untuk munculin file yang sesuai dengan file yang diinginkan -->
+        <!-- Radio button cuman bisa milih satu, sedangkan check box bisa milih banyak, value memiliki nilai yang penting -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan Email" required> <br> <br>
+
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date" required> <br><br>
+
+        <h2>File Upload</h2>
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf"> <br><br>
+
+        <h2 id="personal">Gender</h2>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label> <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label> <br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label> <br><br>
+        
+        <h2>Preferences</h2>
+        <input type="checkbox" id="preference1" name="preferences" value="preference1">
+        <label for="preference1">Preference 1</label><br>
+        <input type="checkbox" id="preference2" name="preferences" value="preference2">
+        <label for="preference2">Preference 2</label><br>
+        <input type="checkbox" id="preference3" name="preferences" value="preference3">
+        <label for="preference3">Preference 3</label><br><br>
+
+        <h2>Additional Comments</h2>
+        <label for="Comments">Additional Comments:</label><br>
+        <textarea name="comments" id="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
